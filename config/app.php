@@ -66,6 +66,8 @@ return [
 
     'timezone' => 'UTC',
 
+    'default_user_timezone' => 'America/New_York',
+
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
@@ -232,9 +234,9 @@ return [
         'View'         => Illuminate\Support\Facades\View::class,
 
         // Extras
-        'HTML'      => Collective\Html\HtmlFacade::class,
-        'Form'      => Collective\Html\FormFacade::class,
-        'Str'       => Illuminate\Support\Str::class,
+        'HTML'         => Collective\Html\HtmlFacade::class,
+        'Form'         => Collective\Html\FormFacade::class,
+        'Str'          => Illuminate\Support\Str::class,
     ],
 
 ];

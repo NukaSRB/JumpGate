@@ -1,6 +1,4 @@
 var elixir = require('laravel-elixir');
-
-var bower_dir = 'vendor/bower_components/';
 var node_dir  = 'node_modules/';
 
 require('laravel-elixir-vue');

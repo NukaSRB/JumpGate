@@ -8,13 +8,14 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 class RouteServiceProvider extends ServiceProvider
 {
     /**
-     * This namespace is applied to your controller routes.
+     * Route providers that contain the configuration of a route group.
      *
-     * In addition, it is set as the URL generator's root namespace.
-     *
-     * @var string
+     * @var array
      */
-    protected $namespace = 'App\Http\Controllers';
+    protected $providers = [
+        \App\Http\Routes\Home::class,
+        \App\Http\Routes\Admin::class,
+    ];
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -23,7 +24,13 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $router = $this->app['router'];
+
+        foreach ($this->providers as $provider) {
+            $provider = new $provider;
+
+            $router->patterns($provider->patterns());
+        }
 
         parent::boot();
     }
@@ -35,44 +42,18 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        $this->mapWebRoutes();
+        $router = $this->app['router'];
 
-        $this->mapApiRoutes();
-        //
-    }
+        foreach ($this->providers as $provider) {
+            $provider = new $provider;
 
-    /**
-     * Define the "web" routes for the application.
-     *
-     * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
-     */
-    protected function mapWebRoutes()
-    {
-        Route::group([
-            'middleware' => 'web',
-            'namespace'  => $this->namespace,
-        ], function ($router) {
-            require base_path('routes/web.php');
-        });
-    }
-
-    /**
-     * Define the "api" routes for the application.
-     *
-     * These routes are typically stateless.
-     *
-     * @return void
-     */
-    protected function mapApiRoutes()
-    {
-        Route::group([
-            'middleware' => ['api', 'auth:api'],
-            'namespace'  => $this->namespace,
-            'prefix'     => 'api',
-        ], function ($router) {
-            require base_path('routes/api.php');
-        });
+            $router->group([
+                'prefix'     => $provider->prefix(),
+                'namespace'  => $provider->namespacing(),
+                'middleware' => $provider->middleware(),
+            ], function ($router) use ($provider) {
+                $provider->routes($router);
+            });
+        }
     }
 }

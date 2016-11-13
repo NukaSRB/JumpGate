@@ -24,8 +24,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        // $filePath = storage_path('logs/cronlog');
         // $schedule->command('inspire')
-        //          ->hourly();
+        //          ->hourly()
+        //          ->sendOutputTo($filePath);
     }
 
     /**

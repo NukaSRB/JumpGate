@@ -38,8 +38,8 @@ abstract class BaseModel extends CoreBaseModel
 
     protected function getDate($key)
     {
-        if (isset($this->attributes[$key]) && $this->attributes[$key] != null) {
-            return carbonParse($this->attributes[$key] . ' UTC');
+        if (isset($this->attributes[$key]) && ! is_null($this->attributes[$key])) {
+            return getTime($this->attributes[$key]);
         }
 
         return null;
@@ -47,8 +47,8 @@ abstract class BaseModel extends CoreBaseModel
 
     protected function setDate($key, $value)
     {
-        if ($value != null) {
-            $this->attributes[$key] = carbonParse($value)->setTimezone('UTC');
+        if (! is_null($value)) {
+            $this->attributes[$key] = setTime($value);
         } else {
             $this->attributes[$key] = null;
         }

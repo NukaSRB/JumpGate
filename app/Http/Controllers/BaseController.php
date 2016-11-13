@@ -11,8 +11,8 @@ abstract class BaseController extends CoreBaseController
 {
     use DispatchesJobs, ValidatesRequests, AuthorizesRequests;
 
-    protected function setPageTitle($pageTitle)
+    protected function setPageTitle($customPageTitle)
     {
-        $this->setViewData(compact('pageTitle'));
+        $this->setViewData(compact('customPageTitle'));
     }
 }
