@@ -5,21 +5,23 @@
   </head>
 
   <body>
-    @include('layouts.partials.menu')
+    <div class="container" id="container">
+      @include('layouts.partials.menu')
 
-    <div class=container" id="content">
-      @if (isset($content))
-        {!! $content !!}
-      @else
-        @yield('content')
-      @endif
+      <div id="content">
+        @if (isset($content))
+          {!! $content !!}
+        @else
+          @yield('content')
+        @endif
+      </div>
+
+      @section('footer')
+        @include('layouts.partials.footer')
+      @show
     </div>
 
     @include('layouts.partials.modals')
-
-    @section('footer')
-      @include('layouts.partials.footer')
-    @show
 
     @include('layouts.partials.javascript')
 

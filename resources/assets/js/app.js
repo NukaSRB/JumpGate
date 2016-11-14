@@ -7,6 +7,7 @@
 
 require('./bootstrap');
 require('./global');
+require('./delete-link')
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -14,8 +15,12 @@ require('./global');
  * the application, or feel free to tweak this setup for your needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+import Example from './components/Example.vue'
 
 var app = new Vue({
-    el: 'body'
+    el: 'body',
+
+    components: {
+        'example': Example,
+    }
 });

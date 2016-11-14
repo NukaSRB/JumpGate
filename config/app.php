@@ -186,6 +186,7 @@ return [
          */
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Camroncade\Timezone\TimezoneServiceProvider::class,
     ],
 
     /*
