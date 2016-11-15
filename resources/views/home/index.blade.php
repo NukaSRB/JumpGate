@@ -66,9 +66,9 @@
 
   <div class="content">
     <div class="title m-b-md">
-      Laravel <i class="fa fa-fw fa-html5"></i>
+      Laravel
       <div class="sub-title">
-        with NukaCode
+        with JumpGate
       </div>
     </div>
 

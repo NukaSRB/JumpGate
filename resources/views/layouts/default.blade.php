@@ -5,8 +5,10 @@
   </head>
 
   <body>
-    <div class="container" id="container">
-      @include('layouts.partials.menu')
+    <div class="container-fluid" id="container">
+      <div class="row">
+        @include('layouts.partials.menu')
+      </div>
 
       <div id="content">
         @if (isset($content))
