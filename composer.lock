@@ -1402,16 +1402,16 @@
             "time": "2016-07-06 00:21:48"
         },
         {
-            "name": "nukacode/core",
+            "name": "jumpgate/core",
             "version": "3.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/NukaCode/core.git",
+                "url": "https://github.com/JumpGate/core.git",
                 "reference": "4c7b9f486f16de81d4ea62deb70384066465a6bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NukaCode/core/zipball/4c7b9f486f16de81d4ea62deb70384066465a6bc",
+                "url": "https://api.github.com/repos/JumpGate/core/zipball/4c7b9f486f16de81d4ea62deb70384066465a6bc",
                 "reference": "4c7b9f486f16de81d4ea62deb70384066465a6bc",
                 "shasum": ""
             },
@@ -1420,7 +1420,7 @@
                 "laracasts/presenter": "0.2.0",
                 "laracasts/utilities": "~2.0",
                 "laravel/framework": "^5.1",
-                "nukacode/database": "1.0.0"
+                "jumpgate/database": "1.0.0"
             },
             "require-dev": {
                 "benconstable/phpspec-laravel": "~2.0",
@@ -1431,8 +1431,8 @@
                 "phpunit/phpunit": "~4.0"
             },
             "suggest": {
-                "nukacode/menu": "Full featured menu system.",
-                "nukacode/users": "A user solution."
+                "jumpgate/menu": "Full featured menu system.",
+                "jumpgate/users": "A user solution."
             },
             "type": "library",
             "autoload": {
@@ -1440,7 +1440,7 @@
                     "src/helpers.php"
                 ],
                 "psr-4": {
-                    "NukaCode\\Core\\": "src/NukaCode/Core"
+                    "JumpGate\\Core\\": "src/JumpGate/Core"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1461,16 +1461,16 @@
             "time": "2016-08-12 14:56:13"
         },
         {
-            "name": "nukacode/database",
+            "name": "jumpgate/database",
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/NukaCode/database.git",
+                "url": "https://github.com/JumpGate/database.git",
                 "reference": "9451df2147e296010fbfd56bce2e9070e1f37c4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NukaCode/database/zipball/9451df2147e296010fbfd56bce2e9070e1f37c4f",
+                "url": "https://api.github.com/repos/JumpGate/database/zipball/9451df2147e296010fbfd56bce2e9070e1f37c4f",
                 "reference": "9451df2147e296010fbfd56bce2e9070e1f37c4f",
                 "shasum": ""
             },
@@ -1488,7 +1488,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "NukaCode\\Database\\": "src/NukaCode/Database"
+                    "JumpGate\\Database\\": "src/JumpGate/Database"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1509,16 +1509,16 @@
             "time": "2016-08-12 14:12:30"
         },
         {
-            "name": "nukacode/menu",
+            "name": "jumpgate/menu",
             "version": "1.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/NukaCode/menu.git",
+                "url": "https://github.com/JumpGate/menu.git",
                 "reference": "36b244163ce1c794375478b32c4fa4d97639abe9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NukaCode/menu/zipball/36b244163ce1c794375478b32c4fa4d97639abe9",
+                "url": "https://api.github.com/repos/JumpGate/menu/zipball/36b244163ce1c794375478b32c4fa4d97639abe9",
                 "reference": "36b244163ce1c794375478b32c4fa4d97639abe9",
                 "shasum": ""
             },
@@ -1532,7 +1532,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "NukaCode\\Menu\\": "src/NukaCode/Menu"
+                    "JumpGate\\Menu\\": "src/JumpGate/Menu"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",

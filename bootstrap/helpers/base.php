@@ -1,6 +1,6 @@
 <?php
 
-use NukaCode\Database\Collection;
+use JumpGate\Database\Collection;
 
 if (! function_exists('start_Debug')) {
     /**

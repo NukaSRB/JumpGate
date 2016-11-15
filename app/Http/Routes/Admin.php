@@ -2,8 +2,8 @@
 
 namespace App\Http\Routes;
 
-use NukaCode\Core\Contracts\Routes;
-use NukaCode\Core\Providers\Routes as BaseRoutes;
+use JumpGate\Core\Contracts\Routes;
+use JumpGate\Core\Providers\Routes as BaseRoutes;
 use Illuminate\Routing\Router;
 
 class Admin extends BaseRoutes implements Routes

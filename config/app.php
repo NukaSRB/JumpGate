@@ -168,8 +168,8 @@ return [
         /*
          * NukaCode Service Providers...
          */
-        NukaCode\Core\Providers\ViewServiceProvider::class,
-        NukaCode\Menu\MenuServiceProvider::class,
+        JumpGate\Core\Providers\ViewServiceProvider::class,
+        JumpGate\Menu\MenuServiceProvider::class,
 
         /*
          * Application Service Providers...

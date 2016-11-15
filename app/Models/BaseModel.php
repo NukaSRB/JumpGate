@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use NukaCode\Core\Models\BaseModel as CoreBaseModel;
+use JumpGate\Core\Models\BaseModel as CoreBaseModel;
 
 abstract class BaseModel extends CoreBaseModel
 {
