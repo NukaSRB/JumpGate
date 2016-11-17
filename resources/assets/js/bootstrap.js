@@ -8,7 +8,8 @@ window._ = require('lodash');
  */
 
 window.$ = window.jQuery = require('jquery');
-require('bootstrap-sass/assets/javascripts/bootstrap');
+window.Tether = require('tether');
+require('bootstrap');
 require('bootbox');
 require('bootstrap-notify');
 

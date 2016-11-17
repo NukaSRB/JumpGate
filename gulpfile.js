@@ -1,7 +1,7 @@
-var elixir = require('laravel-elixir');
-var node_dir  = 'node_modules/';
+const elixir   = require('laravel-elixir');
+const node_dir = 'node_modules/';
 
-require('laravel-elixir-vue');
+require('laravel-elixir-vue-2');
 
 /*
  |--------------------------------------------------------------------------
@@ -14,7 +14,7 @@ require('laravel-elixir-vue');
  |
  */
 
-elixir(function (mix)
+elixir((mix) =>
 {
   mix.sass('app.scss')
      // Fonts

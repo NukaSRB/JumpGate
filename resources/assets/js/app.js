@@ -18,7 +18,7 @@ require('./delete-link')
 import Example from './components/Example.vue'
 
 var app = new Vue({
-    el: 'body',
+    el: '#app',
 
     components: {
         'example': Example,
