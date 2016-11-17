@@ -407,12 +407,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NukaSRB/Core.git",
-                "reference": "e6a13aae265a32c21eda712548f3a65cb7b4e05f"
+                "reference": "0cc667598e2990a585f2e41191a04454f60ed5d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NukaSRB/Core/zipball/e6a13aae265a32c21eda712548f3a65cb7b4e05f",
-                "reference": "e6a13aae265a32c21eda712548f3a65cb7b4e05f",
+                "url": "https://api.github.com/repos/NukaSRB/Core/zipball/0cc667598e2990a585f2e41191a04454f60ed5d1",
+                "reference": "0cc667598e2990a585f2e41191a04454f60ed5d1",
                 "shasum": ""
             },
             "require": {
@@ -460,7 +460,7 @@
                 "source": "https://github.com/NukaSRB/Core/tree/master",
                 "issues": "https://github.com/NukaSRB/Core/issues"
             },
-            "time": "2016-11-17 07:23:05"
+            "time": "2016-11-17 07:50:08"
         },
         {
             "name": "jumpgate/database",
