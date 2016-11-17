@@ -13,7 +13,9 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        // Commands\Inspire::class,
+        \JumpGate\Core\Console\Commands\ServiceMakeCommand::class,
+        \JumpGate\Core\Console\Commands\ServiceListCommand::class,
+        \JumpGate\Core\Console\Commands\ServiceScaffoldCommand::class,
     ];
 
     /**

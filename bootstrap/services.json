@@ -1,0 +1,12 @@
+[
+    {
+        "name": "root",
+        "lower": null,
+        "namespace": "App",
+        "path": "app",
+        "routes": [
+            "\\App\\Http\\Routes\\Home",
+            "\\App\\Http\\Routes\\Admin"
+        ]
+    }
+]
