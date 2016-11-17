@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\File;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
@@ -20,7 +19,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $services = collect(
             json_decode(
-                File::get(base_path('bootstrap/services.json'))
+                file_get_contents(base_path('bootstrap/services.json'))
             )
         );
 
